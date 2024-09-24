@@ -1,0 +1,106 @@
+.container{
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container img{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    background-color: #CCEABB;
+    width: 90%;
+    height: 50px;
+    margin: 30px 0 30px 0;
+}
+.head span{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #48622e;
+    margin-right: 20px;
+}
+.head p{
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+.whyOrganic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+}
+.whyOrganic p{
+    font-size: 1.3rem;
+    margin-right: 8px;
+}
+
+.whyRezqorazeq{
+    padding: 40px;
+    margin: 30px 0 30px 0;
+    height: 30px;
+    background-color: #FB7813;
+    border-radius: 50%;
+    color: #fff;
+
+}
+.Rezqorazeq{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #f2fbed;
+    width: 90%;
+    height: 200px;
+    margin: 30px 0 30px 0;
+    padding: 25px;
+}
+.Rezqorazeq p{
+    font-size: 1.3rem;
+
+}
+.addres{
+    padding: 40px;
+    margin: 30px 0 30px 0;
+    height: 30px;
+    background-color: #F6F6F6;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+}
+.addres p{
+    font-size: 1.2rem;
+}
+.titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    padding: 30px;
+    background-color: #F1FFF1;
+    border-radius: 10px;
+    
+}
+.titles span{
+    font-size: 1.3rem;
+    line-height: 30px;
+}
+.titles p{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}

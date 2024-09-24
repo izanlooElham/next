@@ -1,0 +1,374 @@
+/* ----------------------------------------------navBar styles----------------------------------------------------- */
+
+
+/* -----------------------------------------------------header styles-------------------------------------------------------- */
+
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    background-color: #fff;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    border: 0.5px solid #ffffff;
+    border-radius: 100px;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    position: absolute;
+    top: 50px;
+    right: 10%;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.logo{
+    margin: 30px 0 0 50px;
+}
+.logo img{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.navgation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 20px;
+}
+.navgation a{
+    text-decoration: none;
+    color: #747378;
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+.navgation li{
+    list-style-type: none;
+    transition: all 0.2s ease-in-out;
+}
+/* border sabz */
+.navgation>li::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid #99cc66;
+    transform: scaleX(0);
+    transition: all 250ms ease-in-out;
+}
+.navgation>li:hover:after{
+    transform: scaleX(1);
+}
+
+.cart_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+}
+.cart_logo a{
+    color: #676767;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    margin: 6px;
+
+}
+.cart_logo .cartIcon{
+    margin-top: 13px;
+}
+.menu{
+    margin-bottom: 20px;
+}
+
+ .arrow_icon{
+    position: relative;
+    display: flex;
+}
+        
+ .subMenu{
+    position: absolute;
+    background-color: #f3f3f3;
+    min-width: 220px;
+    height: auto;
+    top: 69px;
+    left: 10px;
+    display: grid;   
+    grid-template-columns: repeat(1,auto); 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.15s ease-in-out;
+    z-index: -999;
+    border-top: 4px solid #676767;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+ .subMenu2{
+    position: absolute;
+    background-color: #f3f3f3;
+    min-width: 220px;
+    height: auto;
+    top: 69px;
+    left: 343px;
+    display: grid;   
+    grid-template-columns: repeat(1,auto); 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.15s ease-in-out;
+    z-index: -999;
+    border-top: 4px solid #676767;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+ }
+
+/* arrow icon */
+.arrow_icon::before{
+    content: '';
+    border-bottom: 2px solid #878787;
+    height: 7px;
+    display: block;
+    border-right: 2px solid #878787;
+    width: 7px;
+    position: absolute;
+    right: 110%;
+    top: 35%;
+    transform: rotate(44deg);
+    font-weight: 700;
+    transition: transform 0.15s ease-in-out;
+}
+
+.arrow_icon:hover:before{
+    transform: rotate(224deg);
+}
+
+ul li:hover .subMenu{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    z-index: 99;
+}
+ul li:hover .subMenu2{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    z-index: 99;
+}
+ul .subMenu li{
+    margin: 0;
+    width: 90%;
+    color: #676767;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+   
+}
+ul .subMenu2 li{
+    margin: 0;
+    width: 90%;
+    color: #676767;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+ 
+}
+ul .subMenu li a{
+    padding: 20px 25px;
+    display: inline-block;
+    
+}
+ul .subMenu2 li a{
+    padding: 20px 25px;
+    display: inline-block;
+}
+.div_sub_food{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    width: 688px;
+    height: 445px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    /* border: 1px solid #676767; */
+    border-radius: 10px;
+    z-index: -999;
+}
+ul li:hover .div_sub_food{
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+
+}
+.div_sub_food img{
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    visibility: hidden;
+   
+}
+.div_sub_food .sobhane{
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 34%;
+    right: 0.1%;
+    padding: 10px;
+    border-radius: 50%;
+}
+.div_sub_food .nut{
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    right: 49%;
+    top: 34%;
+    padding: 15px;
+    border-radius: 50%;
+}
+ul li:hover .div_sub_food img{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+
+.subMenu3{
+    position: absolute;
+    background-color: #f3f3f3;
+    min-width: 220px;
+    height: auto;
+    top: 69px;
+    left: 2%;
+    display: grid;   
+    grid-template-columns: repeat(1,auto); 
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.15s ease-in-out;
+    z-index: -999;
+    border-top: 4px solid #676767;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+ul li:hover .subMenu3{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+    z-index: 99;
+}
+ul .subMenu3 li{
+    margin: 0;
+    width: 100%;
+    color: #676767;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+ul .subMenu3 li a{
+    padding: 20px 25px;
+    display: inline-block; 
+}
+
+
+
+.div_sub_oil{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 60px;
+    width: 430px;
+    height: 300px;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    /* border: 1px solid #676767; */
+    border-radius: 10px;
+}
+ul li:hover .div_sub_oil{
+    opacity: 1;
+    visibility: visible;
+
+}
+.div_sub_oil .oil{
+    width: 130px;
+    height: 130px;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 26%;
+    right: 0.5%;
+    padding: 10px;
+    border-radius: 50%;
+}
+ul li:hover .div_sub_oil img{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: visible;
+}
+/* From Uiverse.io by asgardOP */ 
+.loader {
+    width: fit-content;
+    height: fit-content;
+    border-radius: 7px;
+    /* padding: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .point {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .point::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: rgb(0, 255, 0);
+    border-radius: 25px;
+    animation: loop 1s 0s infinite;
+  }
+  
+  @keyframes loop {
+    0% {
+      background-color: rgb(0, 255, 0);
+      width: 1px;
+      height: 1px;
+    }
+    100% {
+      background-color: rgba(0, 255, 0, 0);
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

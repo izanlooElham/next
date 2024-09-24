@@ -1,0 +1,28 @@
+.bookmarkBTN{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bookmarkIcon {
+    transition: transform 0.3s; /* Smooth animation */
+    font-size: 26px; /* Set your desired icon size */
+    color: #b8b8b8;
+  }
+  
+  .bookmarked {
+    transform: scale(1); /* Scale up when liked */
+    color: #0d83e0;
+  }
+  
+  /* Optional: Add hover effect for the icon */
+  .bookmarkIcon:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+  }
+  .bookmarksLength{
+    font-size: 1rem;
+    margin-left: 5px;
+  }

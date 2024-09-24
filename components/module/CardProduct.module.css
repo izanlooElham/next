@@ -1,0 +1,357 @@
+.container{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: space-between;  
+    background: rgb(255, 255, 255);
+    border-radius: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transition: all ease-in-out 0.3s;
+    margin: 0 10px;
+}
+
+.container:hover {
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+.container img{
+    padding: 20px;
+    height: 250px;
+    width: 170px;
+    margin: 5px 0 5px 0;
+}
+.priceAndRating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 10px 0 10px 0;
+    padding: 12px;
+    position: relative;
+
+}
+.container p{
+    font-size: 1.5rem;
+    color: #3d3d3d;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.priceAndRating span{
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 15px;
+    color: #6a6a6a;
+    position: absolute;
+    left: 10px;
+}
+
+.buttons{
+    display: flex;
+    width: 80%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.buttons span{
+    width:44px;
+    height: 44px;
+}
+/* .container .add{
+    border: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    background-color: #99cc66;
+    color: #fff;
+    font-size: 1.3rem;
+    
+} */
+.plusAndDash{
+    display: flex;  
+    padding: 5px;
+    border-radius: 17px;
+    position: relative;
+    width: 125px;
+    height: 40px;
+}
+.plusAndDash span{
+  position: absolute;
+  top: 2px;
+  right: 41px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 100%;
+  text-align: center;
+}
+.plus{
+    border: 1px solid #ededed;
+    border-radius: 12px;
+    padding: 5px 10px;
+    background: #e8e8e8;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+}
+.dash{
+    border: 1px solid #ededed;
+    border-radius: 12px;
+    padding: 5px 10px;
+    right: 10px;
+    background: #e8e8e8;
+    position: absolute;
+    cursor: pointer;
+}
+
+
+.App{
+    background-color: #fff;
+
+}
+.Favorites{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 40px;
+    margin-top: 10px;
+}
+.likeBTN {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.heartIcon {
+  transition: transform 0.3s; /* Smooth animation */
+  font-size: 26px; /* Set your desired icon size */
+  color: #b8b8b8;
+}
+
+.liked {
+  transform: scale(1); /* Scale up when liked */
+  color: #ff5a5f;
+}
+
+
+/* Optional: Add hover effect for the icon */
+.heartIcon:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+.bookmarkBTN{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bookmarkIcon {
+  transition: transform 0.3s; /* Smooth animation */
+  font-size: 26px; /* Set your desired icon size */
+  color: #b8b8b8;
+}
+
+.bookmarked {
+  transform: scale(1); /* Scale up when liked */
+  color: #0d83e0;
+}
+
+/* Optional: Add hover effect for the icon */
+.bookmarkIcon:hover {
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+.likesLength{
+  font-size: 1rem;
+  margin-right: 5px;
+}
+.bookmarksLength{
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+  /* From Uiverse.io by LeonKohli */ 
+.bookmark_checkbox {
+    display: inline-block;
+  }
+  
+  .bookmark_checkbox__input {
+    display: none;
+  }
+  
+  .bookmark_checkbox__label {
+    cursor: pointer;
+  }
+  
+  .bookmark_checkbox__icon {
+    width: 2em;
+    height: 2em;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transition: stroke 0.3s, fill 0.3s;
+  }
+  
+  .bookmark_checkbox__icon_back {
+    stroke: #333;
+    transition: transform 0.3s;
+  }
+  
+  .bookmark_checkbox__icon_check {
+    stroke: #fff;
+    stroke-dasharray: 16;
+    stroke-dashoffset: 16;
+    transition: stroke-dashoffset 0.3s, transform 0.3s;
+    transform: translateX(2px);
+  }
+  
+  .bookmark_checkbox__input:checked
+    + .bookmark_checkbox__label
+    .bookmark_checkbox__icon {
+    fill: #ff5a5f;
+  }
+  
+  .bookmark_checkbox__input:checked
+    + .bookmark_checkbox__label
+    .bookmark_checkbox__icon_back {
+    stroke: #ff5a5f;
+    transform: scale(1.1);
+    animation: bookmark_pop 0.4s ease;
+  }
+  
+  .bookmark_checkbox__input:checked
+    + .bookmark_checkbox__label
+    .bookmark_checkbox__icon_check {
+    stroke-dashoffset: 0;
+    transition-delay: 0.2s;
+  }
+  
+  @keyframes bookmark_pop {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }
+  /* From Uiverse.io by vinodjangid07 */ 
+.bookmark {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#checkboxInput {
+  display: none;
+}
+
+.svgIcon {
+  height: 30px;
+}
+
+.svgIcon path {
+  fill: rgb(153, 153, 153);
+}
+
+.bookmark::before {
+  content: "\002B";
+  position: absolute;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+  top: 1px;
+}
+
+#checkboxInput:checked + .bookmark::before {
+  content: "\2713";
+  font-size: 0.70em;
+  top: 5px;
+}
+
+#checkboxInput:checked + .bookmark .svgIcon path {
+  fill: rgb(121, 199, 3);
+}
+
+#checkboxInput:active + .bookmark .svgIcon path {
+  fill: rgb(204, 204, 204);
+}
+
+.bookmark::after {
+  content: "";
+  background-color: rgba(56, 105, 0, 0.342);
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+#checkboxInput:checked + .bookmark::after {
+  animation: puff-out-center .5s cubic-bezier(0.165, 0.840, 0.440, 1.000) both;
+}
+
+@keyframes puff-out-center {
+  0% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(9);
+    filter: blur(1px);
+    opacity: 0;
+  }
+}
+  /* From Uiverse.io by adamgiebl */ 
+.add {
+    width: 90px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: linear-gradient(
+      0deg,
+      hsl(90, 50%, 60%,1) 0%,
+      hsl(90, 50%, 60%,1) 100%
+    );
+    border: none;
+    box-shadow: 1 0.7em 3.5em -0.5em #99cc66;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+  }
+  .add span{
+    margin-top: 15px;
+  }
+
+  .add:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #99cc66;
+  }
+  
+  .add:active {
+    box-shadow: 0 0.3em 1em -0.5em #99cc66;
+  }
+  

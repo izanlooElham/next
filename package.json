@@ -1,0 +1,34 @@
+{
+  "name": "rezqorazeq",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.11.5",
+    "@apollo/experimental-nextjs-app-support": "^0.11.3",
+    "@react-google-maps/api": "^2.19.3",
+    "@tanstack/react-query": "^5.55.0",
+    "@tanstack/react-query-devtools": "^5.55.0",
+    "axios": "^1.7.7",
+    "cookies-next": "^4.2.1",
+    "graphql": "^16.9.0",
+    "js-cookie": "^3.0.5",
+    "next": "^14.2.13",
+    "next-auth": "^4.24.7",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^5.2.1",
+    "react-loader-spinner": "^6.1.6",
+    "react-toastify": "^10.0.5"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5"
+  }
+}

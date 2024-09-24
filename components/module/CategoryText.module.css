@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    left: 5%;
+    margin-bottom: 100px;
+}
+.container h2{
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2c2b2b;
+}
+
+.preBorder{
+    background-color: #ffffff;
+    height: 1px;
+    width: 600px;
+}
+.nextBorder{
+    background-color: #ffffff;
+    width: 600px;
+    height: 1px;
+}

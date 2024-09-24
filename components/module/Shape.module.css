@@ -1,0 +1,50 @@
+.shape1{
+    border-radius: 50%;
+    background-color: #99cc66;
+    width: 700px;
+    height: 700px;
+    z-index: -999; 
+    position: absolute;
+    top: 20%;
+    left: 0;
+}
+.shape2{
+    border-radius: 50%;
+    background-color: #99cc66;
+    width: 200px;
+    height: 200px;
+    z-index: -999; 
+    position: absolute;
+    top: 30%;
+    right: 2%;
+}
+.shape3{
+    border-radius: 50%;
+    background-color: #99cc66;
+    width: 400px;
+    height: 400px;
+    z-index: -999; 
+    position: absolute;
+    top: 100%;
+    left: 37%;
+}
+.shape4{
+    border-radius: 50%;
+    background-color: #99cc66;
+    width: 400px;
+    height: 400px;
+    z-index: -999; 
+    position: absolute;
+    top: 13%;
+    right: 20%;
+}
+.shape5{
+    border-radius: 50%;
+    background-color: #99cc66;
+    width: 400px;
+    height: 400px;
+    z-index: -999; 
+    position: absolute;
+    top: 55%;
+    right: 5%;
+}

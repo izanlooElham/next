@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(2, 240px);
+    gap: 20px;
+    width: 65%;
+    position: absolute;
+    top: 70%;
+    right: 21%;
+    margin: auto;
+    height: auto;
+}
+
+.categories {
+    position: relative;
+}
+.categories a{
+    text-decoration: none;
+    transition: all ease-in 0.2s;
+}

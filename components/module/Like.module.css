@@ -1,0 +1,30 @@
+.likeBTN {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .heartIcon {
+    transition: transform 0.3s; /* Smooth animation */
+    font-size: 26px; /* Set your desired icon size */
+    color: #b8b8b8;
+  }
+  
+  .liked {
+    transform: scale(1); /* Scale up when liked */
+    color: #ff5a5f;
+  }
+  
+  
+  /* Optional: Add hover effect for the icon */
+  .heartIcon:hover {
+    transform: scale(1.1); /* Slightly scale up on hover */
+  }
+  .likesLength{
+    font-size: 1rem;
+    margin-right: 5px;
+  }
