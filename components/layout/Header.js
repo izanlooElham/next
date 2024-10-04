@@ -30,7 +30,7 @@ function Header() {
         // فقط یک بار اجرای useQuery
         setShouldFetch(true); // فعال‌سازی fetch هنگام بارگذاری کامپوننت
     }, []); // وابستگی خالی به این معنی است که این effect فقط یک بار اجرا می‌شود
-    console.log(data)
+
   return (
     <div className={styles.container}>
       <NavBar/>

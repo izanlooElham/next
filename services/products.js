@@ -1,8 +1,8 @@
 import api from "../config/api"
 
-const getAllProducts= async(search)=>{
+const getAllProducts= async(search,page)=>{
         try {
-            const response= await api.get(`/admin/products/list?page=1&limit=11/${search}`)
+            const response= await api.get(`/admin/products/list?page=${page}&limit=8/${search}`)
             return {response}
         } catch (error) {
             return{error}

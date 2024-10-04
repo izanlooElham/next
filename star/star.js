@@ -7,8 +7,8 @@ const Star = () => {
         <MdOutlineStar color="#ffa723" style={{fontSize:"10px"}}/>
         <MdOutlineStar color="#ffa723" style={{fontSize:"10px"}}/>
         <MdOutlineStar color="#ffa723" style={{fontSize:"10px"}}/>
-        <MdOutlineStar color="#8e8e8e" style={{fontSize:"10px"}}/>
-        <MdOutlineStar color="#8e8e8e" style={{fontSize:"10px"}}/>
+        <MdOutlineStar color="#b7b7b7" style={{fontSize:"10px"}}/>
+        <MdOutlineStar color="#b7b7b7" style={{fontSize:"10px"}}/>
    </div>
   );
 }

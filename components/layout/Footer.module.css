@@ -1,20 +1,18 @@
 .container{
     display: grid;
-    grid-template-columns: repeat(5,380px);
-    column-gap: 5px;
+    grid-template-columns: repeat(5,400px);
+    column-gap: 10px;
     height: 500px;
     width: 100%;
-    column-gap: 12px;
     bottom: 0;
     background-color: #CBBCB1;
     border-top-left-radius: 5%;
     border-top-right-radius: 5%;
-    margin-top: 400px;
-
+    margin-top: 100px;
 }
 .container img{
-    width: 350px;
-    height: 360px;
+    width: 290px;
+    height: 310px;
     border-radius: 50%;
     position: relative;
     right: 20px;
@@ -30,10 +28,11 @@
     background-color: #F2EFEA;
     height: 85%;
     width: 380px;
-    margin: auto 5px;
+    margin: auto 50px auto auto;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    
 }
 .description span{
     color: #F3FDE8;
@@ -60,7 +59,7 @@
     justify-content: center;
     background-color: #F2EFEA;
     height: 85%;
-    margin: auto 5px;
+    margin: auto 30px auto 10px;
     width: 380px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -94,7 +93,7 @@
     justify-content: center;
     background-color: #F2EFEA;
     height: 85%;
-    margin: auto 5px;
+    margin: auto 10px auto 10px;
     width: 380px;
     line-height: 60px;
     border-bottom-left-radius: 10px;
@@ -128,7 +127,7 @@
     justify-content: center;
     background-color: #F2EFEA;
     height: 85%;
-    margin: auto 5px;
+    margin: auto 10px auto 10px;
     width: 380px;
     line-height: 60px;
     margin-left: 10px;

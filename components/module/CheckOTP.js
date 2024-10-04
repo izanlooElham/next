@@ -36,7 +36,7 @@ function CheckOTP({code, setCode, mobile, setStep}) {
   return (
     <form onSubmit={submitHandler} className={styles.form}>
         <Image src="/Logo4.svg" width={600} height={700} alt="logo" />
-        <span>کد به شماره موبایل "{mobile}" پیامک شد</span>
+        <span>کد به شماره موبایل {mobile} پیامک شد</span>
         <label htmlFor="input">کد تایید را وارد کنید</label>
         <input 
         type="text"

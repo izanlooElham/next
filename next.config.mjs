@@ -3,9 +3,15 @@ const nextConfig = {
   images: {
     remotePatterns: [
       {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '4000',
+        protocol: 'https',
+        hostname: 'bucketforrezqorazeq.storage.c2.liara.space',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'storebucet.storage.c2.liara.space', // Temporarily add this
+        port: '',
         pathname: '/**',
       },
     ],

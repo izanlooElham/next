@@ -8,7 +8,7 @@ function StoryCard({story}) {
   const [isOpen, setIsOpen] = useState(false);
   const videoRef = useRef(null);
   const [isSelected, setIsSelected] = useState(false); // اضافه کردن state جدید
-
+  console.log(story.image)
   const handleOpen = () => {
     setIsOpen(true);
     setIsSelected(true)
@@ -32,7 +32,7 @@ function StoryCard({story}) {
     <>
     <div   className={`${isSelected ? styles.selected : styles.container}`}  onClick={handleOpen}>
       <div className={styles.circle}>
-         <Image width={400} height={400} src={`http://localhost:4000/${story.image}`} style={{borderRadius:"50%"}} alt={story.title}/>
+         <Image width={400} height={400} src={story.image} style={{borderRadius:"50%"}} alt={story.title}/>
       </div>
     </div>
   
@@ -42,7 +42,7 @@ function StoryCard({story}) {
           <div className={styles.videoModalContent}>
             <video  ref={videoRef} controls >
               <source
-                src={`http://localhost:4000/${story.video}`}
+                src={`${story.video}`}
                 type="video/mp4"
                 ></source>
             </video>

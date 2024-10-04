@@ -1,17 +1,17 @@
-import { getAllCategories } from "@/services/categories"
+"use client"
 import styles from "./ProductsPage.module.css"
 import ProductsList from "../module/ProductsList"
 import ProductsPageCategories from "../module/ProductsPageCategories"
 import NavBar2 from "../layout/NavBar2"
 import SearchBox from "../module/SearchBox"
 import StoreText from "../module/StoreText"
-import { getAllProducts } from "@/services/products"
+import { useState } from "react"
+import Pagination from "../module/Pagination"
+import Head from "next/head"
 
-async function ProductsPage({category, search}) {
-  const {res}= await getAllCategories() 
-  const {response}= await getAllProducts(search)
-  const categories= res.data.data.categories
-  const products= response.data.data.products
+
+function ProductsPage({category, search, products,categories}) {
+  const [page, setPage]=useState(1)
   return (
     <div className={styles.container}>
         <NavBar2/>
@@ -24,7 +24,8 @@ async function ProductsPage({category, search}) {
             <div className={styles.ProductsList}>
                 <ProductsList category={category} search={search} products={products} categories={categories}/>
             </div>
-        </div>       
+        </div>  
+        <Pagination page={page} setPage={setPage} category={category}/>
     </div>
   )
 }

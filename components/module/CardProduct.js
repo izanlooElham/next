@@ -34,7 +34,16 @@ function CardProduct({ product, handleLikedList,handleBookmarkedList,handleShopL
             <BookMark bookmarks={bookmarks} id={_id}/>
       </div>
       <Link href={`/categories/${category.title}/${_id}`}>
-        <Image src={`http://localhost:4000/${images}`} alt={title} height={800} width={1000}/>
+      {images.map((image, index) => (
+                <Image 
+                    key={index} // Use index or a unique id
+                    src={image} 
+                    alt={title} 
+                    height={800} 
+                    width={1000} 
+                />
+            ))}
+        {/* <Image src={images} alt={title} height={800} width={1000}/> */}
       </Link>
         <p>{title}</p>
         <div className={styles.priceAndRating}>

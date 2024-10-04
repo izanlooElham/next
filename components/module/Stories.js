@@ -6,7 +6,6 @@ import styles from "./Stories.module.css"
 
 
 async function Stories() {
-
   const {response}=await getAllStories()
   const stories= response.data.data.stories
   return (

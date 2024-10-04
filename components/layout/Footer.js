@@ -14,7 +14,7 @@ function Footer() {
   return (
     
         <div className={styles.container}>
-            <Image src="/organicStore.jpg" width={1600} height={1600} alt="organic"/>
+            {/* <Image src="/organicStore.jpg" width={1600} height={1600} alt="organic"/> */}
             <div className={styles.description}>
                 <span>رزق و رازق</span>
                 <p>در قلب شهر, در میان صفای طبیعت, فروشگاه رزق و رازق با آغوش باز منتظر شماست. 
@@ -41,7 +41,7 @@ function Footer() {
                     
                 </p>
                 <p>
-                    <Link href="http://www.digicala.com"> <FaQuestion/> سوالات متداول </Link>
+                    <Link href="/questions"> <FaQuestion/> سوالات متداول </Link>
                   
                 </p>
                 <p>
@@ -51,8 +51,8 @@ function Footer() {
             </div>
             <div className={styles.quide}>
                 <span>راهنمای خرید</span>
-                <p><Link href="http://www.digicala.com">روش های بازگرداندن کالا</Link></p>
-                <p><Link href="http://www.digicala.com">روش های ارسال</Link></p>
+                <p><Link href="/restoreProduct">روش های بازگرداندن کالا</Link></p>
+                <p><Link href="/deliveryWays">روش های ارسال</Link></p>
                 <a href="tel:09156021090">09156021090<FaPhoneFlip/></a>
             </div>
             <div className={styles.symbols}>

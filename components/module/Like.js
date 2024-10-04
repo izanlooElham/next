@@ -28,7 +28,7 @@ function Like({ likes, id }) {
       }
     },
   });
-  console.log({data, error , loading, called})
+  // console.log({data, error , loading, called})
 
   return (
     <button onClick={() => LikeProduct({ variables: { productID: id } })} className={styles.likeBTN} disabled={loading}>

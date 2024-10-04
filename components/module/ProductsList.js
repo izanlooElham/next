@@ -99,6 +99,7 @@ const createCategoryMap = (categories) => {
           />)
         }
     </div>
+
         {
           !!purchased.length  && (purchased.map(product=> (<SideCartInProductPage key={product._id} data={product}/>)))
         }
